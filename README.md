@@ -169,6 +169,28 @@ input[value*=invalid i] {
 ```
 
 
+Notes
+-----
+
+### `:not()`
+
+Combine `:not()` with one of the selectors above to invert its matches.
+
+```css
+input:not([value^="-"]) {
+  color: green;
+}
+```
+
+```html
+<!-- No match -->
+<input value="$100.00">
+
+<!-- Match -->
+<input value="-$50.00">
+```
+
+
 Links
 -----
 
