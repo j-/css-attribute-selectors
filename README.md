@@ -33,17 +33,17 @@ Represents an element with an attribute name of `attr` whose value is exactly
 `value`.
 
 ```css
-a[href=one] {
+input[type=number] {
   color: red;
 }
 ```
 
 ```html
 <!-- No match -->
-<a href="poney">Link</a>
+<input type="text">
 
 <!-- Match -->
-<a href="one">Link</a>
+<input type="number">
 ```
 
 
